@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  max-width: 60vw;
+  background-color: var(--black);
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --white: #f8f9fa;
+  --black: #000000;
+}
+
+@media (max-width: 900px) {
+  body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+}

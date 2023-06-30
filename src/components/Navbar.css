@@ -1,0 +1,167 @@
+body {
+  margin: auto;
+  max-width: 60vw;
+  background-color: var(--black);
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+nav.main-nav {
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  transition: transform 1.3s ease;
+}
+
+.menu.open {
+  transform: translateX(0);
+}
+
+.menu .navLink {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--white);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.84;
+  font-size: 17px;
+}
+
+.menu .navLink:hover {
+  opacity: 1;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  /* position: relative;
+  top: 1rem;
+  right: 1rem; */
+  width: 45px;
+  height: 45px;
+  user-select: none;
+  z-index: 5;
+}
+
+.burger div {
+  width: 100%;
+  color: var(--white);
+  z-index: 5;
+}
+
+nav.mobile-nav {
+  width: 100%;
+  height: 100px;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.overlay.open {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.overlay-menu {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  padding: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 80px;
+  z-index: 1;
+}
+
+.overlay-menu {
+  text-align: center;
+}
+
+.overlay.open .overlay-menu {
+  transform: translateX(0);
+}
+
+.overlay .navLink {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  text-decoration: none;
+  color: var(--white);
+  opacity: 0.84;
+  font-size: 26px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay .navLink:hover {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+
+  nav.main-nav {
+    display: none;
+  }
+
+  .burger{
+    display: block;
+  }
+
+  nav.mobile-nav{
+    display: flex;
+  }
+}

@@ -1,0 +1,186 @@
+main {
+  padding-top: 100px;
+  margin: auto;
+  color: var(--white);
+}
+
+main h1 {
+  color: var(--white);
+  font-size: 4.5rem;
+  letter-spacing: -4.48px;
+  margin: 0;
+  line-height: 0.8;
+  padding-bottom: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0 0;
+}
+
+.heroImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.textContainer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.role {
+  opacity: 0.64;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-top: 4px;
+  letter-spacing: -0.51px;
+}
+
+.role span {
+  font-style: italic;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 1);
+}
+
+.projects {
+  padding-top: 100px;
+}
+
+.projects h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.2em 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  opacity: 0.64;
+  transition: opacity 0.2s ease-in-out;
+}
+
+a {
+  color: var(--white);
+  opacity: 0.84;
+  transition: opacity 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+p {
+  color: var(--white);
+  margin-top: 4px;
+}
+
+h3 {
+  margin: 1em 0;
+  font-size: 1.3em;
+}
+
+li:hover {
+  opacity: 1;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.topImage,
+.bottomImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 500ms, transform 500ms;
+}
+
+.imageContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.imageContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.imageContainer.heroImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.imageContainer:hover .topImage {
+  transform: scale(1.05);
+}
+
+.imageContainer:hover .bottomImage {
+  transform: scale(1.05);
+}
+
+.authorContainer h1 {
+  display: inline-block;
+}
+
+.letter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.letter:hover {
+  transform: translateY(-7px);
+}
+
+@media (max-width: 900px){
+  footer, main{
+    max-width: 100vw;
+    padding: 40px;
+  }
+
+  .container{
+    display: block;
+  }
+}
+@media (max-width: 900px){
+  .contact{
+    padding: 0px 40px 40px 40px;
+  }
+}

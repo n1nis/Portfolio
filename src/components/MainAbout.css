@@ -1,0 +1,17 @@
+.imgRight {
+  float: right;
+}
+
+.main p {
+  line-height: 1.5rem;
+}
+
+.main h2 {
+  margin: 20px 0;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
