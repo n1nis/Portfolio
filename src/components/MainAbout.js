@@ -32,6 +32,8 @@ function MainAbout() {
         Udemy platform.
       </p>
       <br />
+      <a href="https://github.com/n1nis"><h2>Tech Stack</h2></a>
+      <br />
       <h2>Hobbies</h2>
       <p>
         Passionate about psychology, personal development books, astronomy,
