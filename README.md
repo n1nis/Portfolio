@@ -2,6 +2,6 @@
 
 Current website about me. More info here: [link](https://rucinski-portfolio.onrender.com/)
 
-## Authors
+## Author
 
-- [@n1nis](https://github.com/n1nis/)
+[@n1nis](https://github.com/n1nis/)
