@@ -12,7 +12,7 @@ function Footer() {
           <Link to="/About">About</Link>
           <Link to="/Contact">Contact</Link>
           <span></span>
-          <Link to="/">CV</Link>
+          <a href="../assets/CV.pdf">CV</a>
           <Link to="https://github.com/n1nis">GitHub</Link>
           <Link to="https://www.linkedin.com/in/krzysztof-ruci%C5%84ski-6841a6281/">
             LinkedIn
