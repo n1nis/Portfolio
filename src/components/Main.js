@@ -65,6 +65,12 @@ function Main() {
         <h2>Featured Projects:</h2>
         <ul>
           <li>
+            <Link to="https://n1nis.github.io/gym_website/">
+              <h3>Gym-Exercises Website</h3>
+            </Link>
+            <p>Full Gym Workout Site Linked to API.</p>
+          </li>
+          <li>
             <Link to="https://n1nis.github.io/Genius-Clone/">
               <h3>Genius clone</h3>
             </Link>
