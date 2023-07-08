@@ -68,7 +68,7 @@ function Main() {
             <Link to="https://n1nis.github.io/gym_website/">
               <h3>Gym-Exercises Website</h3>
             </Link>
-            <p>Full Gym Workout Site Linked to API.</p>
+            <p>This Full Gym Workout site is developed with React and utilizes an API integration.</p>
           </li>
           <li>
             <Link to="https://n1nis.github.io/Genius-Clone/">
