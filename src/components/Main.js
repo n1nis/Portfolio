@@ -65,6 +65,12 @@ function Main() {
         <h2>Featured Projects:</h2>
         <ul>
           <li>
+            <Link to="https://n1nis.github.io/youtube_clone/">
+              <h3>Youtube clone</h3>
+            </Link>
+            <p>Site that is built on the 'youtube.com' pattern.</p>
+          </li>
+          <li>
             <Link to="https://n1nis.github.io/gym_website/">
               <h3>Gym-Exercises Website</h3>
             </Link>
